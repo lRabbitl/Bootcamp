@@ -1,0 +1,35 @@
+/*5 tag*/
+p{
+    color: red; 
+    font-weight: bold; 
+    font-size: 20px; 
+    text-decoration: underline;
+}
+/*4 class*/
+.parra{
+    color: blue;
+}
+/*3 tag + class*/
+p.parra{
+    color:purple;
+}
+/*2 class*/
+#p1{
+    color: green;
+}
+/*1 tag+class*/
+p#p1{
+    color: orange;
+}
+
+/*0 class+id*/
+.parra#p1{
+    color: pink;
+}
+
+/*-1 tag+class+id*/
+p.parra#p1{
+    color: gray;
+}
+
+
