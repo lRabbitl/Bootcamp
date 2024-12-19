@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "NanumMyeongjo-Bold";
+    src: url(../Semana2/fonts/NanumMyeongjo-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Righteous-Regular";
+    src: url(../Semana2/fonts/Righteous-Regular.ttf);
+}
+
+body{
+    background-color: beige;
+}
+
 h1{
     color:gray;
     text-decoration: underline;
@@ -19,4 +33,23 @@ h2{
 
 td{
     color:green !important;
+}
+
+th{
+    background-color: burlywood;
+}
+
+.span1{
+    font-family: "NanumMyeongjo-Bold";
+    background-color: rebeccapurple;
+}
+
+.span2{
+    font-family: "Righteous-Regular";
+    text-decoration: overline;
+}
+
+.span3{
+    font-family: "Jost";
+    text-transform: uppercase;
 }

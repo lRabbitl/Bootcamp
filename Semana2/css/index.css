@@ -1,0 +1,116 @@
+/* Para que CSS pueda leer una fuente desde un archivo
+tenemos que poner @font-face, esto nos permite cargar una fuente externa y darle un nombre para su uso */
+/*font-family puede ser cualquier nombre, pero es buena práctica nombrarla por su nombre oficial*/
+@font-face {
+    /* en este caso font-family es el nombre de la fuente*/
+    font-family: "Righteous-Regular";
+    /* src : es el lugar donde esta alojado la fuente*/
+    src: url("../fonts/Righteous-Regular.ttf"); /* cada . en el url "retrocede" una carpeta*/
+}
+
+@font-face {
+    /* en este caso font-family es el nombre de la fuente*/
+    font-family: "NanumMyeongjo-Bold";
+    /* src : es el lugar donde esta alojado la fuente*/
+    src: url("../fonts/NanumMyeongjo-Bold.ttf"); /* cada . en el url "retrocede" una carpeta*/
+}
+
+@font-face {
+    /* en este caso font-family es el nombre de la fuente*/
+    font-family: "NanumMyeongjo-ExtraBold";
+    /* src : es el lugar donde esta alojado la fuente*/
+    src: url("../fonts/NanumMyeongjo-ExtraBold.ttf"); /* cada . en el url "retrocede" una carpeta*/
+}
+/*si no quiero usar o no usaré una fuente simplemente la borro, no hago el @font-face */
+@font-face {
+    /* en este caso font-family es el nombre de la fuente*/
+    font-family: "NanumMyeongjo-Regular";
+    /* src : es el lugar donde esta alojado la fuente*/
+    src: url("../fonts/NanumMyeongjo-Regular.ttf"); /* cada . en el url "retrocede" una carpeta*/
+}
+
+h1{
+    font-family: "Jost", Helvetica, Arial, sans-serif;
+    font-size: 45px;
+    /* font-weight tambien puede recibir numeros que van de 100 a 900
+    van sin unidades de medida*/
+    font-weight: 100;
+    text-decoration: underline;
+    background-color: #afdaaf;
+}
+
+/*
+    700=bold
+    900=bolder
+*/
+
+.parrafo{
+    font-family: "Dank Mono", monospace;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+/*
+Hexadecimal
+RGB : Red Green Blue
+RGBA: Red Green Blue Alpha
+Alpha: Opacidad 0-1
+hsl : Hue Saturation Alpha
+*/
+
+.link-a{
+    font-size: 32px;
+    font-family: "Play";
+    /* Al ponerle none en una propiedad estamos invalidadola */
+    text-decoration: none;
+    color: #af1;/*en hexadecimal: 6 dígitos alfanuméricos*/
+}
+
+body{
+    font-family: Arial;
+}
+
+ul{
+    background-color: rgba(53, 146, 239, 0.5);
+}
+
+.span-1{
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+
+.span-2{
+    text-decoration: overline;
+}
+
+.span-3{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.span-4{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.span-5{
+    text-decoration: overline;
+    background-color: #0ba;
+    text-decoration-color: white;
+}
+
+.span-6{
+    color: #fff;
+    background-color    : rgb(112, 14, 104);
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-transform: lowercase;
+}
+
+.title-2{
+    font-family: "Righteous-Regular";
+}
+
+.parrafo-2{
+    font-family: "NanumMyeongjo-Bold";
+}
