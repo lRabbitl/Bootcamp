@@ -1,0 +1,88 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 2em; /*2* 20px(body) inmediato superior o padre*/
+    font-size: 2rem; /*2* 10px(html) padre root o raiz*/
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.small{
+    font-size: 0.6em;
+}
+
+.solid{
+    border-style: solid;
+}
+
+.dashed{
+    border-style: dashed;
+    border-color: green;
+    border-width: 2px;
+}
+
+.dotted{
+    border: 3px dotted blue; /* el orden es indistinto */
+}
+
+.double{
+    border-style: double;
+    border-color: brown;
+    border-width: 6px;
+}
+
+.groove{
+    border-style: groove;
+    border-color: yellow;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.hidden{
+    border-style: hidden;
+}
+
+.ridge{
+    border-style: ridge;
+    border-color:greenyellow;
+    border-width: 5px;
+}
+
+.left_solid{
+    border-left-style: solid;
+}
+
+.right_dotted{
+    border-right: dotted pink 3px;
+}
+
+.top_dashed{
+    border-top: dashed 2px gray;
+}
+
+.bottom_double{
+    border-bottom: double 5px red;
+}
+
+.mix-left-top{
+    border-style: solid dotted solid dotted;
+    border-width: 4px;
+    border-color: black red ;
+}
+
+#bnuevo:hover{
+    color:blue;
+    border-style: hidden;
+}
