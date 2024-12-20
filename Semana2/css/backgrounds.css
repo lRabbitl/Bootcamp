@@ -1,0 +1,32 @@
+body{
+    font-family: Verdana;
+}
+
+.bg{
+    border: solid;
+    height: 300px;
+}
+
+.color-red{
+    background-color: red;
+}
+
+.color-green{
+    background-color: green;
+}
+
+.bg-img{
+    background: url("../../Semana1/images/289030290_1087353458657553_6621710991423933230_n.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-img-goku{
+    background: url("../../Semana1/images/triste.jpg");
+    /* Alto de 500px para este div*/
+    height: 500px;
+    background-size: cover;
+    /* Mostrar parte central de la imagen*/
+    background-position: center;
+    background-repeat: no-repeat;
+}

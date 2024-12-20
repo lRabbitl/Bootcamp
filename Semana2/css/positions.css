@@ -1,0 +1,70 @@
+.bg-box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    /* para mover este elemento por todo el navegador */
+    position: relative;
+    /* con un position tenemos la opcion de usar lo siguiente:
+    top, left, right, bottom. SOLO funcionan con un POSITION */
+    left: 100px;
+    /*top: 100px;*/
+}
+
+/* Se puede combinar absolute con relative */
+/* Absolute necesita de una padre que defina su entorno, ancho y alto */
+/* Relative funciona como padre de absolute */
+
+.padre{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    /* Si el hijo no tiene un relative el hijo va a tener al body como padre */
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+
+.bandera{
+    height: 100vh; /* viewport height */
+    border:solid;
+    position: relative;
+}
+
+.green{
+    background-color: green;
+    height: 100vh;
+    width: 40%;
+    float: left;
+}
+
+.red{
+    background-color: red;
+    height: 100vh;
+    width: 60%;
+    float: right;
+}
+
+.escudo{
+    background: url("../images/Coat_of_arms_of_Portugal_\(lesser\).svg.png");
+    background-repeat: no-repeat;
+    /* Nuestra imagen mide Xpx x Ypx */
+    /* El cuadro que lo contiene mide 200px x 200px */
+    /* Para que la foto ocupe esos pixeles sobrantes o faltantes podemos usar la propiedad cover */
+    /*  cover:  Escala la imagen hasta que cubra completamente el área del contenedor, sin importar si es más pequeña o más grande.
+                Esto puede provocar que se recorten partes de la imagen si sus proporciones no coinciden con las del contenedor.
+        contain:Escala la imagen hasta que quepa completamente dentro del contenedor, respetando sus proporciones.
+                Esto puede dejar espacio vacío (márgenes visibles) si las proporciones de la imagen no coinciden con las del contenedor.*/
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(40% - 100px);
+}

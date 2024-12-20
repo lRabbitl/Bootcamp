@@ -1,0 +1,37 @@
+body{
+    font-family: Verdana;
+}
+
+header{
+    position: fixed; /*Al poner el atributo fixed convertimos al elemento en un inline */
+    height: 100px;
+    width: 100%;
+    z-index: 1;/* permite sobre exponer elementos, valores de 1 a infinito */
+}
+
+nav{
+    background-color: #333;
+}
+
+ul{
+    padding: 10px;
+}
+
+ul li{
+    display: inline;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+div{
+    position: relative;
+    top: 100px;
+}
+
+#nosotros{
+    height: 100vh;
+    background-color: aquamarine;
+}
