@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+.nav{
+    margin: 30px;
+    height: 10vh;
+}
+
+.logo{
+    float:left;
+    height: 10vh;
+}
+
+.logo img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list-menu{
+    float: right;
+}
+
+.list-menu ul li{
+    display: inline;
+    padding: 20px;
+    color: hsl(238, 22%, 44%);
+    font-weight: 400;
+}
+
+.container-welcome{
+    height: 90vh;
+    padding: 30px;
+}
+
+.container-welcome-left{
+    float: left;
+}
+
+.container-welcome-left h1{
+    width: 50%;
+    font-weight: bold;;
+}
+
+.container-welcome-left p{
+    width: 50%;
+}
+
+/* Solo afecta a los inputs tipo email */
+input[type="email"]{
+    padding: 10px;
+    width: 300px;
+}
+
+button{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.container-form{
+    width: 50%;
+    height: 40px;
+}
+
+.container-form div:first-child{
+    float: left;
+}
+
+.container-form div:last-child{
+    float: right;
+}
+
+.container-welcome-right{
+    float: right;
+}
+
+.container-wave{
+    background: url(./imagenes/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
+}
+
+.container-description{
+    margin-top: -20px;
+    height: 90vh;
+    background-color: #F8F8FE;
+}
+
+.container-description-left{
+    float: left;
+    padding: 60px;
+}
+
+.container-description div:first-child h2{
+    font-size: 2.5em;
+}
+
+.container-description div:first-child p{
+    width: 70%;
+}
+
+a{
+    color: hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid;
+    text-decoration: none;
+}
+
+.container-description-right{
+    float: right;
+    padding: 60px;
+}
+
+.card{
+    margin-top: 40px;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.img-testimonial{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial p{
+    font-size: 13px;
+}
+
+.testimonial-right{
+    margin-left: 10px;
+    padding: 0;;
+}
