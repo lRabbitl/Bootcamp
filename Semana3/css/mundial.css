@@ -1,23 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     box-shadow: 0 1px 8px #666;
-    background-color: rgb(124, 124, 124);
+    background-color: #c9c9c9;
 }
 
-#nav-title{
+#nav-title {
     font-size: 1.5em;
 }
 
-header ul{
+header ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -25,22 +25,22 @@ header ul{
     padding: 0 20px;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: #fff;
     transition: all 0.3s;
 }
 
-header a:hover{
+header a:hover {
     color: #b2dfdb;
     transition: all 0.5s;
 }
 
-.dropdown{
+.dropdown {
     display: block;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -49,26 +49,85 @@ header a:hover{
     z-index: 1;
 }
 
-.dropdown-content li{
+.dropdown-content li {
     display: block;
     padding: 20px;
 }
 
-.dropdown-content li a{
+.dropdown-content li a {
     text-decoration: none;
     color: #666;
 }
 
-.dropdown-content li a:hover{
+.dropdown-content li a:hover {
     text-decoration: underline;
     color: #333;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropdown-button{
+.dropdown:hover .dropdown-button {
     text-decoration: underline;
 }
 
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 45%;
+    }
+
+    header ul{
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+    body{
+        background-color: green;
+    }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: yellow;
+    }
+
+    /* Adentro podemos ejecutar ciertos estilos */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 45%;
+    }
+
+    header ul {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+    body{
+        background-color: purple;
+    }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: black;
+    }
+}
